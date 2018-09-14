@@ -34,20 +34,20 @@ class NbrEquipage {
          ),
           );
   
-            $boatNum = 0;
+            //$boatNum = 0;
   
             foreach ($myBoats as $boat) {
   
-              $boatNum++;
-              echo"Boat #$boatNum:\n";
-              foreach ($boat as $key => $value) {
-                echo"$key : $value \n<br>" ;
-                if($key == "nbrPassager" && $value >= 10){
+              //$boatNum++;
+              //echo"Boat #$boatNum:\n";
+              //foreach ($boat as $key => $value) {
+                //echo"$key : $value \n<br>" ;
+                if($boat["nbrPassager"]>0 && $boat["nbrPassager"] >= 10){
                     
-                    echo $boat["boat"];
+                    echo "Le".$boat["boat"]." peut embarquer ".$boat["nbrPassager"]." passagers" ;
                     
                 }
-              }
+              //}
             }
   
    
