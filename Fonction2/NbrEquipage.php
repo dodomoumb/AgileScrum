@@ -16,8 +16,14 @@ class NbrEquipage {
     
     
     public function affiche() {
-        $tab = [1,4,3,3,4,2,2,2,4,1];
-        
+        $myBoat = 
+            array(
+             "Manureva"=> 7,
+             "Sirius"=> 10,
+             "Surcouf"=>  23
+       );
+ 
+           print_r ($myBoat);
         
         
         
