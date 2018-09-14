@@ -75,7 +75,7 @@ class Table1{
              }
          
          }
-          print_r ( $tableTemp);
+       //   print_r ( $tableTemp);
          return $tableTemp;
      }
 

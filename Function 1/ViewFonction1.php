@@ -11,12 +11,11 @@ require_once './Table1.php';
 $table = new Table1();
 $table->ConstructTableRandom(30, 100);
 
-echo "<br>";
-echo "<hr>";
 
 $result = $table->SearchOccurence(100);
 
 
 for ($i=0; $i < 99; $i++) { 
-   echo "pour $i c\'est " . $result[$i] ." fois";
+   echo " la valeur " . $i.  " est "  . $result[$i] ." fois";
+   echo"<br>";
 }
