@@ -43,7 +43,9 @@ class NbrEquipage {
               foreach ($boat as $key => $value) {
                 echo"$key : $value \n<br>" ;
                 if($key == "nbrPassager" && $value >= 10){
-                    echo $boatNum;
+                    
+                    echo $boat["boat"];
+                    
                 }
               }
             }
