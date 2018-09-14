@@ -6,7 +6,7 @@
  * Time: 11:37
  */
 
-class Function1
+class Table
 {
 
 }
