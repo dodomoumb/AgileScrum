@@ -16,19 +16,39 @@ class NbrEquipage {
     
     
     public function affiche() {
-        $myBoat = 
+        $myBoats = array(
+            array(//from   w  w w .ja v a 2  s. co m
+             "boat"=>"Manureva",
+             "nbrEquipage"=>3,
+             "nbrPassager"=> 4
+         ),
             array(
-             "Manureva"=> 7,
-             "Sirius"=> 10,
-             "Surcouf"=>  23
-       );
- 
-           print_r ($myBoat);
-        
-        
-        
+             "boat"=>"Sirius",
+             "nbrEquipage"=>4,
+             "nbrPassager"=> 6
+         ),
+            array(
+             "boat"=>"Surcouf",
+             "nbrEquipage"=>8,
+             "nbrPassager"=> 15
+         ),
+          );
+  
+            $boatNum = 0;
+  
+            foreach ($myBoats as $boat) {
+  
+              $boatNum++;
+              echo"Boat #$boatNum:\n";
+              foreach ($boat as $key => $value) {
+                echo"$key : $value \n<br>" ;
+                if($key == "nbrPassager" && $value >= 10){
+                    echo $boatNum;
+                }
+              }
+            }
+  
+   
     }
-   
-   
 	
 }
